@@ -1,3 +1,8 @@
+/**
+	* @desc 验证层叠上下文的独立性
+	* @author thalo
+	* @date 2020-04-01
+	*/
 
 (function() {
 	const wrap = createNode("div", {}, [
