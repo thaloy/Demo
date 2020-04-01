@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<!-- 标准模式 -->		
+	<script>
+		console.log(document.compatMode);
+	</script>
+
+	<pre>
+   👇是一个标准模式下的盒模型,其
+   高度 100px;
+   宽度 100px;
+   padding 10px;
+   border 20px;
+   margin: 10px;
+   ------------------------------
+   其实际的内容区域(包含块的宽高为)
+   contain 100px;
+   contain 100px;
+	</pre>
+	<div class="standard_box">
+		<style>
+      .standard_box{
+      	width: 100px;
+      	height: 100px;
+      	padding: 10px;
+      	background-color: red;
+      	border: 20px solid black;
+      	margin: 10px;
+      }
+		</style>
+	</div>
+</body>
+</html>

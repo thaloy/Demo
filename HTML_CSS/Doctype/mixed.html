@@ -1,0 +1,36 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			console.log(document.compatMode);
+		</script>
+
+		<pre>
+     👇是一个混杂模式下的盒模型,其
+     高度 100
+     宽度 100
+     padding 20
+     border 10
+     -------------------------------
+     其内容区域(包含块的宽高)为
+     contain.width 40
+     contain.height 40
+		</pre>
+		<div class="mixed_box">
+			<style>
+        .mixed_box {
+        	width: 100px;
+        	height: 100px;
+        	background-color: red;
+        	padding: 20px;
+        	margin: 20px;
+        	border: 10px solid black;
+					box-sizing: border-box; /* 这里使用box-sizing 来查看区别，其原因是chrome对混杂模式的盒模型的处理与标准模式是一致的 */
+        }
+			</style>
+		</div>
+	</body>
+</html>
